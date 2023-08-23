@@ -1,0 +1,43 @@
+<header class="main-header">
+    
+    <h1 class="main-header__title">
+        <span class="main-header__title--blue">ProWay</span><span class="main-header__title--orange">Computers</span>
+    </h1>
+
+    <div class="container-menu">
+
+    <nav class="main-header__menu">
+        <ul>
+            <li>
+                <a routerLink="/produtos">Produtos</a>
+            </li>
+            <li>
+                <a routerLink="/carrinho">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    Carrinho                    
+                    <span class="badge-carrinho">{{ carrinhoService.obtemCarrinho().length }}</span>
+                </a>
+            </li>
+            <li>
+                <a>Contato</a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/rafael-alves-teixeira-5262214b/">
+                    <i class="fa-brands fa-linkedin-in"></i>                
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/rafael-alves-teixeira">
+                    <i class="fa-brands fa-github"></i>                    
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <form class="search-form">
+        <input type="text">
+        <button><i class="fa-solid fa-magnifying-glass"></i></button>
+    </form>
+
+</div>
+
+</header>
