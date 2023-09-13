@@ -8,7 +8,7 @@ import { FooterComponent } from './footer/footer.component';
 import { NaoEncontradaComponent } from './nao-encontrada/nao-encontrada.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSnackBarModule} from "@angular/material/snack-bar"
-import { ContatoComponent } from './contato/contato.component';
+// import { ContatoComponent } from './contato/contato.component';
 
 @NgModule({
   declarations: [
@@ -16,13 +16,13 @@ import { ContatoComponent } from './contato/contato.component';
     HeaderComponent,
     FooterComponent,
     NaoEncontradaComponent,
-    ContatoComponent
   ],
+  
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatSnackBarModule
+    MatSnackBarModule    
   ],
   providers: [],
   bootstrap: [AppComponent]

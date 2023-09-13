@@ -7,6 +7,13 @@ import { FormBuilder, Validators } from '@angular/forms';
   styleUrls: ['./contato.component.css']
 })
 export class ContatoComponent implements OnInit {
+  constructor(
+    private fb: FormBuilder
+  ) { }
+
+  ngOnInit(): void {    
+  }
+
   formContato = this.fb.group({
     nome: ["", [
       Validators.minLength(4),
@@ -29,15 +36,10 @@ export class ContatoComponent implements OnInit {
       Validators.required
     ]]
   });
-  constructor(
-    private fb: FormBuilder
-  ) { }
-
-  ngOnInit(): void {    
-  }
-
+ 
   enviarFormulario() {
     alert("A mensagem foi enviada!");
+    this.formContato.reset();
   }
 
 }
